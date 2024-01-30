@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #929292;
+        }
+    </style>
+</head>
+
+<body class="container pt-4">
+
+    <select id="mySelect" class="js-example-basic-single form-control" style="width: 300px;">
+        <option value="" disabled selected>Select an option</option>
+        <option value="option1">Male</option>
+        <option value="option2">Female</option>
+        <option value="option3">Old</option>
+        <option value="option4">New</option>
+        <option value="option5">Good</option>
+        <option value="option6">Bad</option>
+        <option value="option6">Rich</option>
+        <option value="option6">Poor</option>
+    </select>
+
+    <script>
+        $(document).ready(function () {
+            $('#mySelect').select2({
+                placeholder: "Select an option"
+            });
+        });
+    </script>
+
+</body>
+
+</html>
